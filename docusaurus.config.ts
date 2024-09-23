@@ -15,7 +15,7 @@ const config: Config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'japan-da-man', // Usually your GitHub org/user name.
+  organizationName: 'pokemon-card-management', // Usually your GitHub org/user name.
   projectName: 'PCM-documents', // Usually your repo name.
   deploymentBranch: 'gh-pages',
   onBrokenLinks: 'throw',
