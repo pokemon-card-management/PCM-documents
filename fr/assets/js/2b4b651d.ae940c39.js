@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkpcm_documents=self.webpackChunkpcm_documents||[]).push([[5969],{8385:e=>{e.exports=JSON.parse('{"metadata":{"permalink":"/PCM-documents/fr/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":5,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);
