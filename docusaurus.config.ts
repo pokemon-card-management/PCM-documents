@@ -1,17 +1,16 @@
 import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
-
 const config: Config = {
-  title: 'My Site',
+  title: 'PCM仕様書',
   tagline: 'Dinosaurs are cool',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://pokemon-card-management.github.io',
+  url: 'https://github.com/',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/PCM-documents/',
+  baseUrl: '/pages/pokemon-card-management/PCM-documents/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
