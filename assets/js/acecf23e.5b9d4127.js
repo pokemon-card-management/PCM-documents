@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkpcm_documents=self.webpackChunkpcm_documents||[]).push([[1903],{1912:e=>{e.exports=JSON.parse('{"blogBasePath":"/pages/pokemon-card-management/PCM-documents/blog","blogTitle":"Blog","authorsListPath":"/pages/pokemon-card-management/PCM-documents/blog/authors"}')}}]);

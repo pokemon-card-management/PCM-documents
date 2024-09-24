@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkpcm_documents=self.webpackChunkpcm_documents||[]).push([[3380],{3377:e=>{e.exports=JSON.parse('{"metadata":{"permalink":"/pages/pokemon-card-management/PCM-documents/fr/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":5,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);
