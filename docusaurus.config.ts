@@ -73,9 +73,15 @@ const config: Config = {
       items: [
         {
           type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
+          sidebarId: 'proposal',
           position: 'left',
-          label: 'Tutorial',
+          label: '企画書',
+        },
+        {
+          type: 'docSidebar',
+          sidebarId: 'specification',
+          position: 'left',
+          label: '仕様書',
         },
         {to: '/blog', label: 'Blog', position: 'left'},
         {
