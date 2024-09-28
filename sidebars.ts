@@ -19,10 +19,10 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: 'category',
-      label: 'PokemonCardDatabase',
+      label: 'A.PokemonCardDatabase',
       link: {
         type: 'generated-index',
-        title: 'PokemonCardDatabase',
+        title: 'A.PokemonCardDatabase',
         slug: '/A.pokemon-card-database',
       },
       items: [

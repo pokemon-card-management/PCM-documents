@@ -57,7 +57,7 @@ const config: Config = {
           sidebarId: 'docs',
           position: 'left',
           to: '/docs',
-          label: 'Docs',
+          label: 'ドキュメント',
         },
         {
           href: 'https://www.pokemon-card.com/',
