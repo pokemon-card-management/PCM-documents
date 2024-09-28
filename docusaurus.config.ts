@@ -23,10 +23,6 @@ const config: Config = {
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
-  i18n: {
-    defaultLocale: 'ja',
-    locales: ['ja','en','fr'],
-  },
 
   presets: [
     [
@@ -50,7 +46,7 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: 'My Site',
+      title: 'PCM Doc',
       logo: {
         alt: 'My Site Logo',
         src: 'img/logo.svg',
@@ -58,23 +54,10 @@ const config: Config = {
       items: [
         {
           type: 'docSidebar',
-          sidebarId: 'proposal',
+          sidebarId: 'docs',
           position: 'left',
-          to: '/docs/proposal-documents',
-          label: '企画書',
-        },
-        {
-          type: 'docSidebar',
-          sidebarId: 'requirements-definition',
-          position: 'left',
-          to: '/docs/requirements-definition-documents',
-          label: '要件定義書',
-        },        {
-          type: 'docSidebar',
-          sidebarId: 'specification',
-          position: 'left',
-          to: '/docs/specification-documents',
-          label: '仕様書',
+          to: '/docs',
+          label: 'Docs',
         },
         {
           href: 'https://www.pokemon-card.com/',
@@ -86,12 +69,6 @@ const config: Config = {
           label: 'GitHub',
           position: 'right',
         },
-        {
-          type: 'docsVersionDropdown',
-        },
-        {
-          type: 'localeDropdown',
-        }
       ],
     },
     footer: {
