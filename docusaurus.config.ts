@@ -75,23 +75,6 @@ const config: Config = {
       style: 'light',
       links: [
         {
-          title: 'ドキュメント',
-          items: [
-            {
-              label: '企画書',
-              to: '/proposal-documents/intro',
-            },
-            {
-              label: '要件定義書',
-              to: '/requirements-definition-documents/intro',
-            },
-            {
-              label: '仕様書',
-              to: '/specification-documents/intro',
-            },
-          ],
-        },
-        {
           title: 'Community',
           items: [
             {
@@ -111,10 +94,6 @@ const config: Config = {
         {
           title: 'More',
           items: [
-            {
-              label: 'Blog',
-              to: '/blog',
-            },
             {
               label: 'GitHub',
               href: 'https://github.com/facebook/docusaurus',
