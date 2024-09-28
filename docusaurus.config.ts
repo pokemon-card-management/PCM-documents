@@ -24,8 +24,8 @@ const config: Config = {
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en','fr'],
+    defaultLocale: 'ja',
+    locales: ['ja','en','fr'],
   },
 
   presets: [
@@ -36,24 +36,9 @@ const config: Config = {
           sidebarPath: './sidebars.ts',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          routeBasePath: '/',
         },
-        blog: {
-          showReadingTime: true,
-          feedOptions: {
-            type: ['rss', 'atom'],
-            xslt: true,
-          },
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-          // Useful options to enforce blogging best practices
-          onInlineTags: 'warn',
-          onInlineAuthors: 'warn',
-          onUntruncatedBlogPosts: 'warn',
-        },
+        blog: false,
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -75,15 +60,27 @@ const config: Config = {
           type: 'docSidebar',
           sidebarId: 'proposal',
           position: 'left',
+          to: '/docs/proposal-documents',
           label: '企画書',
         },
         {
           type: 'docSidebar',
+          sidebarId: 'requirements-definition',
+          position: 'left',
+          to: '/docs/requirements-definition-documents',
+          label: '要件定義書',
+        },        {
+          type: 'docSidebar',
           sidebarId: 'specification',
           position: 'left',
+          to: '/docs/specification-documents',
           label: '仕様書',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
+        {
+          href: 'https://www.pokemon-card.com/',
+          label: 'ポケモンカード公式',
+          position: 'right',
+        },
         {
           href: 'https://github.com/facebook/docusaurus',
           label: 'GitHub',
@@ -98,14 +95,22 @@ const config: Config = {
       ],
     },
     footer: {
-      style: 'dark',
+      style: 'light',
       links: [
         {
-          title: 'Docs',
+          title: 'ドキュメント',
           items: [
             {
-              label: 'Tutorial',
-              to: '/docs/intro',
+              label: '企画書',
+              to: '/proposal-documents/intro',
+            },
+            {
+              label: '要件定義書',
+              to: '/requirements-definition-documents/intro',
+            },
+            {
+              label: '仕様書',
+              to: '/specification-documents/intro',
             },
           ],
         },
