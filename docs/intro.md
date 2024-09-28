@@ -28,7 +28,7 @@ $ npm start
 
 ### ビルド
 ```zsh
-$ npm build
+$ npm run build
 ```
 
 ### デプロイ
