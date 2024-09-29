@@ -5,3 +5,74 @@ tags:
 ---
 
 # A.2.要件定義書
+
+## A.要件分析
+- データベース作成において重要な事前決定事項を調べる
+  - インデックス
+  - 
+
+## B.要件仕様の作成
+
+### B.1.データベースの設計
+ER図をMermaid記法で記す。
+
+(参考:https://docusaurus.io/docs/markdown-features/diagrams,
+https://mermaid.js.org/config/accessibility.html#entity-relationship-diagram)
+
+```mermaid
+---
+title: "PokemonCardDatabase"
+---
+erDiagram
+    cardPacks ||--|{ cards  : ""
+    cards }o -- o{ cardDecks  : ""
+
+    cardPacks {
+        bigint id PK "ID"
+        varchar name "パック名"
+        varchar regulation "レギュレーション"
+        timestamp created_at "作成日時"
+        timestamp updated_at "更新日時"
+    }
+
+    cards {
+        bigint id PK "ID"
+        varchar name "カード名"
+        varchar card_type "カードのタイプ"
+        varchar image_url "写真s3パス"
+        bigint pack_id FK "パックID"
+        bigint collection_number "コレクションナンバー"
+        varchar rarity "レアリティ"
+        varchar type "タイプ"
+        varchar special_type "特別なタイプ"
+        varchar evolution_type "進化タイプ"
+        varchar hit_point "HP"
+        varchar characteristics "特性"
+        varchar attack1_name "技1の名前"
+        varchar attack1_energy "技1のエネルギー"
+        varchar attack1_damage "技1のダメージ"
+        varchar attack1_effect "技1の効果"
+        varchar attack2_name "技2の名前"
+        varchar attack2_energy "技2のエネルギー"
+        varchar attack2_damage "技2のダメージ"
+        varchar attack2_effect "技2の効果"
+        varchar trainers_effect "トレーナーの効果"
+        varchar energy_effect "エネルギーの効果"
+        varchar special_rule "特別なルール"
+        timestamp created_at "作成日時"
+        timestamp updated_at "更新日時"
+    }
+
+    cardDecks {
+        bigint id PK "ID"
+        bigint author_id FK "オーサーID:users.id"
+        varchar tweet "ツイート"
+        timestamp created_at "作成日時"
+        timestamp created_by "作成者"
+        timestamp updated_at "更新日時"
+        timestamp updated_by "更新者"
+    }
+```
+
+ポケモンカードの見方は[このサイト](https://snkrdunk.com/articles/15397/)を参考にした。
+sqlの型一覧 : https://qiita.com/shuhoyo/items/07d28cec6babe788051d#varcharnmax%E5%9E%8B
